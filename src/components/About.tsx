@@ -13,7 +13,7 @@ const FOCUS_ICONS = [
 
 export const About: React.FC = () => {
   return (
-    <section id="about" className="py-24 px-4 sm:px-6 lg:px-8 border-t border-[#292929] relative bg-[#080808]">
+    <section id="about" className="py-24 px-4 sm:px-6 lg:px-8 border-t border-[#292929] relative bg-[#080808]/75 backdrop-blur-[1px]">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="mb-14">

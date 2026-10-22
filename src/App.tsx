@@ -4,6 +4,7 @@
  */
 
 import React from 'react';
+import { AnimatedBackground } from './components/AnimatedBackground';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
@@ -18,7 +19,10 @@ import { Footer } from './components/Footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#080808] text-[#F5F5F5] font-sans antialiased selection:bg-[#F28AB2]/25 selection:text-[#F28AB2]">
+    <div className="relative min-h-screen bg-[#080808] text-[#F5F5F5] font-sans antialiased selection:bg-[#F28AB2]/25 selection:text-[#F28AB2]">
+      {/* Living Animated Black Background: Neural Particle Constellation */}
+      <AnimatedBackground />
+
       {/* Sticky Top Navigation */}
       <Navbar />
 
