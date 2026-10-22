@@ -98,7 +98,7 @@ export const Hero: React.FC = () => {
               {nameLetters.map((char, index) => {
                 if (char === " ") {
                   return (
-                    <span key={index} className="w-4 sm:w-6 md:w-10 inline-block">
+                    <span key={index} className="w-3 sm:w-4 md:w-6 inline-block">
                       &nbsp;
                     </span>
                   );
@@ -110,9 +110,9 @@ export const Hero: React.FC = () => {
                     variants={{
                       hidden: {
                         opacity: 0,
-                        y: 45,
-                        filter: 'blur(10px)',
-                        scale: 0.8,
+                        y: 35,
+                        filter: 'blur(8px)',
+                        scale: 0.85,
                       },
                       visible: {
                         opacity: 1,
@@ -122,16 +122,16 @@ export const Hero: React.FC = () => {
                         transition: {
                           type: 'spring',
                           damping: 14,
-                          stiffness: 110,
+                          stiffness: 120,
                         },
                       },
                     }}
                     whileHover={{
-                      scale: 1.15,
+                      scale: 1.12,
                       color: '#F28AB2',
                       transition: { duration: 0.15 },
                     }}
-                    className="inline-block text-6xl sm:text-8xl md:text-9xl lg:text-[11rem] font-extrabold tracking-tight font-heading select-none cursor-default text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] via-[#F5F5F5] to-[#999999] hover:text-[#F28AB2] transition-colors drop-shadow-sm leading-none"
+                    className="inline-block text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tight font-heading select-none cursor-default text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF] via-[#F5F5F5] to-[#999999] hover:text-[#F28AB2] transition-colors drop-shadow-sm leading-tight"
                   >
                     {char}
                   </motion.span>
@@ -144,9 +144,9 @@ export const Hero: React.FC = () => {
               initial={{ scaleX: 0, opacity: 0 }}
               animate={{ scaleX: 1, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.7, ease: 'easeOut' }}
-              className="w-48 sm:w-72 md:w-96 h-[2px] mx-auto mt-6 bg-gradient-to-r from-transparent via-[#F28AB2] to-transparent relative"
+              className="w-36 sm:w-56 md:w-72 h-[2px] mx-auto mt-4 bg-gradient-to-r from-transparent via-[#F28AB2] to-transparent relative"
             >
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2.5 h-2.5 rotate-45 bg-[#F28AB2] shadow-sm shadow-[#F28AB2]" />
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 rotate-45 bg-[#F28AB2] shadow-sm shadow-[#F28AB2]" />
             </motion.div>
           </div>
 
